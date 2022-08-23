@@ -5,27 +5,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>SCANDI</title>
 </head>
 
 <body>
   <header class="header">
     <div class="header__container container container_wide">
-      <a class="header__logo">
-        <img src="img/logo.svg" alt="Логотип компании SCANDI - графическое изображение торшера">
-        <span>Scandi</span>
-      </a>
-      <nav class="header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__item-link" href="#about">О компании</a></li>
-          <li class="nav__item"><a class="nav__item-link" href="#portfolio">Портфолио</a></li>
-          <li class="nav__item"><a class="nav__item-link" href="#team">Команда</a></li>
-          <li class="nav__item"><a class="nav__item-link" href="#working">Как мы работаем</a></li>
-          <li class="nav__item"><a class="nav__item-link" href="#reviews">Отзывы клиентов</a></li>
-          <li class="nav__item"><a class="nav__item-link" href="#feedback">Оставить заявку</a></li>
-        </ul>
-      </nav>
-      <a class="header__phone" href="tel:79818574624">+7 (981) 857-46-24</a>
+      <div class="header__wrapper">
+        <a class="header__logo" href="#">
+          <img src="img/logo.svg" alt="Логотип компании SCANDI - графическое изображение торшера">
+          Scandi
+        </a>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__item-link" href="#about">О компании</a></li>
+            <li class="nav__item"><a class="nav__item-link" href="#portfolio">Портфолио</a></li>
+            <li class="nav__item"><a class="nav__item-link" href="#team">Команда</a></li>
+            <li class="nav__item"><a class="nav__item-link" href="#working">Как мы работаем</a></li>
+            <li class="nav__item"><a class="nav__item-link" href="#reviews">Отзывы клиентов</a></li>
+            <li class="nav__item"><a class="nav__item-link" href="#feedback">Оставить заявку</a></li>
+          </ul>
+        </nav>
+        <a class="header__phone" href="tel:79818574624">+7 (981) 857-46-24</a>
+      </div>
     </div>
   </header>
   <main>
@@ -169,7 +173,7 @@
           <button class="form__btn button" type="submit">Оставить заявку</button>
         </form>
         <div class="feedback__map">
-          <iframe src="https://yandex.ru/map-widget/v1/-/CCUR5XRR~A" frameborder="0" allowfullscreen="true"></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/-/CCUR5XRR~A"></iframe>
         </div>
       </div>
     </section>
