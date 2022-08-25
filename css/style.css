@@ -16,7 +16,9 @@
   font-display: swap;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -41,9 +43,6 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-a:hover {
   cursor: pointer;
 }
 
@@ -82,7 +81,7 @@ img {
   box-shadow: 5px 4px 17px 0px #40312f;
 }
 
-/* HEADER */
+/* Меню */
 
 .header {
   position: absolute;
@@ -111,10 +110,6 @@ img {
   width: 25px;
 }
 
-.header__nav {
-  min-width: 100%;
-}
-
 .nav__list {
   display: flex;
   flex-wrap: wrap;
@@ -125,16 +120,20 @@ img {
   flex-shrink: 0;
 }
 
+.nav__item-link {
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease 0s;
+}
+
 .nav__item-link:hover {
-  cursor: pointer;
-  border-bottom: 1px solid #533738;
+  border-color: #533738;
 }
 
 .header__phone {
   margin-left: 34px;
 }
 
-/* PROMO */
+/* Промо */
 
 .promo {
   padding-bottom: 168px;
@@ -159,7 +158,7 @@ img {
   margin-bottom: 21px;
 }
 
-/* ABOUT */
+/* О нас */
 
 .about {
   margin-bottom: 65px;
@@ -211,7 +210,9 @@ img {
 
 .stats__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 30px 20px;
 }
 
 .stats__number {
@@ -227,4 +228,93 @@ img {
   font-size: 30px;
   line-height: 37px;
   text-transform: uppercase;
+}
+
+/* Наши проекты */
+
+.portfolio {
+  margin-bottom: 65px;
+}
+
+.portfolio__container {
+}
+
+.portfolio__title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.portfolio__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+  margin-bottom: 40px;
+}
+
+figure.portfolio__item {
+  line-height: 0;
+}
+
+.portfolio-item {
+  position: relative;
+  color: #fff;
+}
+
+.portfolio-item figcaption {
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  background-color: rgba(100, 72, 69, 0.8);
+  padding: 86px 35px;
+  opacity: 0;
+  transition: opacity 0.3s ease 0s;
+}
+
+.portfolio-item:hover figcaption {
+  opacity: 1;
+}
+
+.portfolio-item__title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+}
+
+.portfolio-item__subtitle {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  margin-bottom: 19px;
+}
+
+.portfolio-item__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.portfolio__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  cursor: pointer;
+}
+
+.portfolio__link span {
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease 0s;
+}
+
+.portfolio__link:hover span {
+  border-color: #533738;
 }
