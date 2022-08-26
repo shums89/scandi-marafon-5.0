@@ -236,9 +236,6 @@ img {
   margin-bottom: 65px;
 }
 
-.portfolio__container {
-}
-
 .portfolio__title {
   font-weight: 400;
   font-size: 40px;
@@ -317,4 +314,37 @@ figure.portfolio__item {
 
 .portfolio__link:hover span {
   border-color: #533738;
+}
+
+/* Команда */
+
+.team {
+  padding-top: 50px;
+  padding-bottom: 35px;
+  background-color: #e2c4ba;
+}
+
+.team__title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.team__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.68%;
+}
+
+.team__item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.team__item img {
+  margin-bottom: 10px;
 }
