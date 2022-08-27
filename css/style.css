@@ -46,7 +46,8 @@ a {
   cursor: pointer;
 }
 
-ul li {
+ul li,
+ol li {
   list-style: none;
 }
 
@@ -347,4 +348,54 @@ figure.portfolio__item {
 
 .team__item img {
   margin-bottom: 10px;
+}
+
+/* Как мы работаем */
+
+.working {
+  padding-bottom: 80px;
+  margin-bottom: 65px;
+  background-color: #e2c4ba;
+}
+
+.working__title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.working__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5% 1.67%;
+  counter-reset: workingList;
+}
+
+.working__item {
+  position: relative;
+  padding-top: 90px;
+  text-align: center;
+}
+
+.working__item::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #8d7370;
+  counter-increment: workingList;
+  content: counter(workingList);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  color: #fff;
 }
