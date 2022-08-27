@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <title>SCANDI</title>
 </head>
@@ -154,9 +155,33 @@
     <article class="reviews" id="reviews">
       <div class="reviews__container container">
         <h2 class="reviews__title">Отзывы</h2>
-        <div class="reviews__slider slider">
-          <div class="slider__wrapper">
-            <div class="slider__slide slide">
+        <div class="reviews__slider slider swiper">
+          <div class="slider__wrapper swiper-wrapper">
+            <div class="slider__slide slide swiper-slide">
+              <blockquote class="slide__quote">
+                <p>Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
+                <p>Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко!</p>
+                <p>Буду советовать и своим друзьям к вам обращаться!</p>
+                <footer class="slide__quote-author">Анна Беловская</footer>
+              </blockquote>
+              <ul class="slide__images">
+                <li class="slide__images-item"><img src="img/review-1.jpg" alt="Фотография гостиной Анны Беловской"></li>
+                <li class="slide__images-item"><img src="img/review-2.jpg" alt="Фотография кухни Анны Беловской"></li>
+              </ul>
+            </div>
+            <div class="slider__slide slide swiper-slide">
+              <blockquote class="slide__quote">
+                <p>Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
+                <p>Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко!</p>
+                <p>Буду советовать и своим друзьям к вам обращаться!</p>
+                <footer class="slide__quote-author">Анна Беловская</footer>
+              </blockquote>
+              <ul class="slide__images">
+                <li class="slide__images-item"><img src="img/review-1.jpg" alt="Фотография гостиной Анны Беловской"></li>
+                <li class="slide__images-item"><img src="img/review-2.jpg" alt="Фотография кухни Анны Беловской"></li>
+              </ul>
+            </div>
+            <div class="slider__slide slide swiper-slide">
               <blockquote class="slide__quote">
                 <p>Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
                 <p>Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко!</p>
@@ -194,7 +219,8 @@
       <a class="footer__copyright" href="#">ИП Королёва А.А.</a>
     </div>
   </footer>
-  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
