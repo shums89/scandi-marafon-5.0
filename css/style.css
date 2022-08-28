@@ -76,6 +76,7 @@ img {
   line-height: 24px;
   padding: 25px 66px;
   transition: box-shadow 0.3s ease 0s;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -400,6 +401,8 @@ figure.portfolio__item {
   color: #fff;
 }
 
+/* Отзывы */
+
 .reviews {
   margin-bottom: 65px;
 }
@@ -474,4 +477,100 @@ figure.portfolio__item {
 .slider__button-next {
   right: 0;
   transform: translateY(-50%);
+}
+
+/* Оставить заявку */
+
+.feedback {
+  height: 624px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 37px;
+  background-color: #8d7370;
+}
+
+.feedback__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  height: 100%;
+}
+
+.form {
+  color: #fff;
+}
+
+.form__wrapper {
+  max-width: 507px;
+  margin-left: auto;
+}
+
+.form__title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.form__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  opacity: 0.6;
+  margin-bottom: 44px;
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-bottom: 31px;
+}
+
+.form__input {
+  height: 35px;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+
+.form__input::placeholder {
+  font: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #f6ede9;
+}
+
+.form__input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.form__btn {
+  color: #533738;
+}
+
+.feedback__map iframe {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+/* Футер */
+
+.footer {
+  margin-bottom: 37px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 42px;
+}
+
+.footer__address {
+  flex: 1 1 auto;
 }
